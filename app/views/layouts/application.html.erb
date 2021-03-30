@@ -9,10 +9,15 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <style>
+      .gradient {
+        background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+      }
+    </style>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body class="bg-white text-gray-700" style="font-family: 'Source Sans Pro', sans-serif">
+  <body class="leading-normal tracking-normal gradient" style="font-family: 'Source Sans Pro', sans-serif">
     <%= yield %>
   </body>
 </html>
